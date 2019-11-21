@@ -21,7 +21,7 @@
 /// 5. VHButtonPlaceCustom: Allows to customize the positions of buttons.
 ///
 /// Check https://github.com/Nightonke/VHBoomMenuButton/wiki for more information.
-public enum ButtonPlaceEnum: Int {
+public enum ButtonPlaceEnum: Int, CaseIterable {
     
     case sc_1
     case sc_2_1
@@ -74,7 +74,7 @@ public enum ButtonPlaceEnum: Int {
     case unknown
     
     public static var count: Int {
-        return ButtonPlaceEnum.custom.hashValue + 1
+        return ButtonPlaceEnum.custom.rawValue + 1
     }
     
     public func buttonNumber() -> Int {

@@ -17,7 +17,7 @@
 /// - topRight: Top-right.
 /// - bottomLeft: Bottom-left.
 /// - bottomRight: Bottom-right.
-public enum ButtonPlaceAlignmentEnum {
+public enum ButtonPlaceAlignmentEnum :CaseIterable{
     
     case center
     case top

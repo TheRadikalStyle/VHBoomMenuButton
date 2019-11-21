@@ -11,7 +11,7 @@
 /// - inOrder: In-order.
 /// - reverse: Reverse.
 /// - random: Random.
-public enum OrderEnum {
+public enum OrderEnum :CaseIterable{
     
     /// In-order.
     case inOrder

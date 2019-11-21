@@ -19,7 +19,7 @@
 ///  4. VHPiecePlaceCustom: Allows to customize the positions of pieces.
 ///
 ///  Check https://github.com/Nightonke/VHBoomMenuButton/wiki for more information.
-public enum PiecePlaceEnum: Int {
+public enum PiecePlaceEnum: Int, CaseIterable {
     
     // Dots
     case dot_1
@@ -73,7 +73,7 @@ public enum PiecePlaceEnum: Int {
     case unknown
     
     public static var count: Int {
-        return PiecePlaceEnum.custom.hashValue + 1
+        return PiecePlaceEnum.custom.rawValue + 1
     }
     
     public func pieceNumber() -> Int {

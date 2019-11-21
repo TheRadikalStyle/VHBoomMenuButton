@@ -16,7 +16,8 @@
 /// - horizontalThrow1: Boom-buttons boom in a horizontal-throw line that opens downward.
 /// - horizontalThrow2: Boom-buttons boom in a horizontal-throw line that opens upward.
 /// - random: Boom-buttons boom in a random line selected from straight, parabola1, parabola2, parabola3, parabola4, horizonal-throw1 and horizonal-throw2 lines.
-public enum BoomEnum: Int {
+@objc
+public enum BoomEnum: Int, CaseIterable {
     
     /// Boom-buttons boom in a straight line.
     case straightLine = 0
@@ -36,6 +37,6 @@ public enum BoomEnum: Int {
     case random
     
     static var count: Int {
-        return BoomEnum.random.hashValue + 1
+        return BoomEnum.random.rawValue + 1
     }
 }

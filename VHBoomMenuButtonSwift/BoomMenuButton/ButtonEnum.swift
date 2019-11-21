@@ -12,7 +12,7 @@
 /// - textOutsideCircle: Boom-button with an image and a text outside in a circular or a square shape.
 /// - ham: Boom-button with an image, a text and a sub-text inside in a rectangle shape.
 /// - unknown: Boom-button unknown.
-public enum ButtonEnum {
+public enum ButtonEnum :CaseIterable{
     case simpleCircle
     case textInsideCircle
     case textOutsideCircle

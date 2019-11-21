@@ -6,7 +6,7 @@
 //  Copyright © 2017 Nightonke. All rights reserved.
 //
 
-enum BoomStateEnum {
+enum BoomStateEnum :CaseIterable{
     case didBoom
     case willBoom
     case didReboom

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Nightonke. All rights reserved.
 //
 
-enum ButtonStateEnum {
+enum ButtonStateEnum :CaseIterable {
     case normal
     case highlighted
     case unable
